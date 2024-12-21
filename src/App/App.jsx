@@ -32,9 +32,9 @@ export default function App() {
                 <Header burgerFunc={() => setIsMenu(true)} />
                 {/* Налаштування маршрутизації */}
                 <Routes>
-                    <Route path="/" element={<Content />} />
-                    <Route path="/news" element={<News />} />
-                    <Route path="/shop" element={<Shop />} />
+                    <Route path="./" element={<Content />} />
+                    <Route path="./news" element={<News />} />
+                    <Route path="./shop" element={<Shop />} />
                 </Routes>
                 <Footer/>
             </>
