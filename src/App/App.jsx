@@ -24,7 +24,7 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/robocar">
         {isMenu ? (
             <ModalMenu burgerFunc={() => setIsMenu(false)} />
         ) : (
@@ -32,9 +32,9 @@ export default function App() {
                 <Header burgerFunc={() => setIsMenu(true)} />
                 {/* Налаштування маршрутизації */}
                 <Routes>
-                    <Route path="./" element={<Content />} />
-                    <Route path="./news" element={<News />} />
-                    <Route path="./shop" element={<Shop />} />
+                    <Route path="/" element={<Content />} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="/shop" element={<Shop />} />
                 </Routes>
                 <Footer/>
             </>
