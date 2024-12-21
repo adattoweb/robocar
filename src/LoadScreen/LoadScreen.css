@@ -1,0 +1,21 @@
+.load-screen{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #000000 0%, #0E0E0E 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-screen h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #fff;
+    transition: 0.3s ease all;
+    cursor:default;
+}
+@media screen and (max-width: 500px){
+    .load-screen h1{
+        font-size: 40px;
+    }
+}
