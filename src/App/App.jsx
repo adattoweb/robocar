@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
+  console.log('update1')
   const [isLoading, setIsLoading] = useState(true)
   const [isMenu, setIsMenu] = useState(false)
   console.log(isMenu)
