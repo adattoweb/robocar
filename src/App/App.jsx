@@ -6,15 +6,10 @@ import Shop from '../Shop/Shop'
 import News from '../News/News'
 import ModalMenu from '../Modal/Modal'
 import LoadScreen from '../LoadScreen/LoadScreen'
-import Page404 from '../Page404/Page404'
 import {useState, useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  if(window.location.pathname !== '/' && window.location.pathname !== '/news' && window.location.pathname !== '/shop'){
-    window.location.pathname = "/"
-    return <Page404></Page404>
-  }
   const [isLoading, setIsLoading] = useState(true)
   const [isMenu, setIsMenu] = useState(false)
   console.log(isMenu)
